@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnbb1bts8f3tv"]
+
+[ext_resource type="Script" path="res://objects/Mesh4D/Mesh4D.gd" id="1_4y3mc"]
+[ext_resource type="Shader" path="res://shaders/slicer.gdshader" id="2_6f4dx"]
+[ext_resource type="Script" path="res://resources/Mesh4DFromFile/Mesh4DFromFile.gd" id="3_hs8ps"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hchq1"]
+render_priority = 0
+shader = ExtResource("2_6f4dx")
+shader_parameter/object_transform = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/object_origin = Vector4(0, 0, 0, 0)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pb5r1"]
+custom_aabb = AABB(0, 0, -1, 1, 1, 1)
+script = ExtResource("3_hs8ps")
+material_4d = SubResource("ShaderMaterial_hchq1")
+
+[node name="Mesh4D" type="Node"]
+script = ExtResource("1_4y3mc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_pb5r1")

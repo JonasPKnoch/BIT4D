@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj3vwle144c1l"]
+
+[ext_resource type="PackedScene" uid="uid://bnbb1bts8f3tv" path="res://objects/Mesh4D/Mesh4D.tscn" id="1_t81xr"]
+[ext_resource type="Script" path="res://levels/RotCube.gd" id="1_tfhf3"]
+[ext_resource type="PackedScene" uid="uid://lngjbg66xfwg" path="res://objects/Camera4D/Camera4D.tscn" id="2_kukcw"]
+
+[node name="RotCube" type="Node"]
+script = ExtResource("1_tfhf3")
+
+[node name="Mesh4D" parent="." instance=ExtResource("1_t81xr")]
+
+[node name="Camera4D" parent="." instance=ExtResource("2_kukcw")]
+position_4d = Vector4(0, 0, 4, 0)

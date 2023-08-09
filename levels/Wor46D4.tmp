@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://yevp10081llu"]
+
+[ext_resource type="Script" path="res://objects/Node4D/Node4D.gd" id="1_dee44"]
+[ext_resource type="PackedScene" uid="uid://bnbb1bts8f3tv" path="res://objects/Mesh4D/Mesh4D.tscn" id="2_nfqja"]
+[ext_resource type="PackedScene" uid="uid://c50aqyg3xf0db" path="res://objects/DebugCamera4D/DebugCamera4D.tscn" id="3_m7wcw"]
+
+[node name="World" type="Node"]
+script = ExtResource("1_dee44")
+
+[node name="DebugCamera4D" parent="." instance=ExtResource("3_m7wcw")]
+
+[node name="Cube" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+
+[node name="Ground" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(0, -5, 0, 0)
+scale_4d = 6.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.922439, 0)
+
+[node name="Grand1" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(0, 5.445, 0, -1.155)
+rotation_4d_1 = Vector3(0.785, 0, 0)
+
+[node name="Grand2" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(-1.36, 5, 0.29, 0)
+rotation_4d_1 = Vector3(0, 0.785, 0)
+
+[node name="Grand3" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(0.27, 5, 0, 0.78)
+rotation_4d_1 = Vector3(0, 0, 0.785)
+
+[node name="Grand4" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(0, 5, 1.755, -0.475)
+rotation_4d_2 = Vector3(0.785, 0, 0)
+
+[node name="Grand5" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(2.665, 6.19, -1.75, 0)
+rotation_4d_2 = Vector3(0, 0.785, 0)
+
+[node name="Grand6" parent="." instance=ExtResource("2_nfqja")]
+mesh_4D_path = "res://4DMs/Hypercube.4dm"
+position_4d = Vector4(-0.635, 6.21, -0.865, -0.7)
+rotation_4d_2 = Vector3(0, 0, 0.785)
