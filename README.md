@@ -6,5 +6,5 @@ The rendering is done efficiently on the GPU. The 4D models are loaded from a cu
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=P3hHktfxik4
 " target="_blank"><img src="http://img.youtube.com/vi/P3hHktfxik4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="400" border="10" /></a>
 </p>
