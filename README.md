@@ -3,4 +3,4 @@ BIT4D (Back In The 4th Dimension), is a little 4-dimensional rendering engine bu
 
 The rendering is done efficiently on the GPU. The 4D models are loaded from a custom file format that can be converted from 4D OFF.
 
-[![PRESENTATION THUMBNAIL](https://img.youtube.com/vi/P3hHktfxik4/0.jpg)](https://www.youtube.com/watch?v=P3hHktfxik4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P3hHktfxik4?si=SDb4eCj1h5YbXalv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
